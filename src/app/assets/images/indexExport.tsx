@@ -1,0 +1,1 @@
+export const bgFredLogo = require('./bg-fredLogo.png')

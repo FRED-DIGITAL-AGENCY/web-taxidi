@@ -25,3 +25,14 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+  @font-face {
+    font-family: 'PlusJakartaSansSemiBold';
+    src: url('../app/assets/fonts/PlusJakartaSans/static/Montserrat-SemiBold.ttf') format('truetype');
+    /* add other font formats here as needed */
+  }
+
+.headerLanding {
+  background-image: url('../app/assets/images/bg-fredLogo.png');
+  flex-direction: column;
+}
