@@ -1,8 +1,11 @@
+'use client'
 import Header from "../components/Header"
 import { ImHourGlass } from 'react-icons/Im';
 import { BsGridFill, BsStar, BsStars } from 'react-icons/Bs';
 import { AiFillCheckCircle } from 'react-icons/Ai';
 import './styles.css'
+import Image from "next/image";
+import { JumpingGirl } from "../assets/images/indexExport";
 export default function Home() {
   return (
     <main className="flex min-h-screen  flex-col">
@@ -10,6 +13,7 @@ export default function Home() {
       <Body2 />
       <div className="Body3BG">
         <Body3 />
+
       </div>
     </main>
   )
@@ -141,7 +145,7 @@ const Body3 = () => {
           we can help you with your travel needs.
          "/>
       </div>
-
+      <ServiceContainer />
 
     </div>
   )
@@ -179,15 +183,35 @@ const MoreAbout = ({ text = '', header = '', marginLeft = '0px', marginRight = '
   )
 }
 
-const Service = () => {
+const ServiceContainer = () => {
   return (
-    <div className="Body1 " >
-      <div className="Body1Text1 ">Travel Seamlessly</div>
-      <div className="Body1Text2 ">Exploring The World, Accessing Global <span>Opportunities</span> </div>
-      <div className="Body1Text3 ">We Are On A Mission To Make Traveling Around The World Easy by
-        creating flexibility to traveling, work & Study overseas
-        accessing global Opportunities.
+    <div className="ServiceContainer " >
+
+      <div className="ServiceImage">
+        <Image style={{ borderRadius: '30px' }} src={JumpingGirl} alt="" />
       </div>
+
+      <div className="Services">
+
+      </div>
+
+      <div className="StudyAbroad">
+
+      </div>
+
+      <div>
+
+      </div>
+    </div>
+  )
+}
+
+const ServicesList = ({ text = '' }) => {
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'row', marginTop: '15px' }}>
+      <AiFillCheckCircle size={20} color="#699BF7" />
+      <div className="AboutRightListText">{text}</div>
     </div>
   )
 }
