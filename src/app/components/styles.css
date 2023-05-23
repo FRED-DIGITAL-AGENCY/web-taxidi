@@ -13,7 +13,12 @@
 
 }
 
-.headerLogoImage {}
+.headerLogoImage {
+    
+    height: 65px;
+    width: 65px;
+    
+}
 
 .headerLogoLine {
     width: 2px;
@@ -21,7 +26,12 @@
     background: #FFFFFF;
     transform: matrix(-1, 0, 0, 1, 0, 0);
 }
-
+.headerLogoLineDartMode{
+    width: 2px;
+    height: 60px;
+    background: #000000;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
 .headerLogoText {
     margin-left: 15px;
     margin-right: 15px;
@@ -34,6 +44,17 @@
     color: #FFFFFF;
 }
 
+.headerLogoTextDartMode{
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: 'PlusJakartaSansSemiBold';
+    
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    width: 66px;
+    color: #000000;
+}
  .headerlistMenue {
     display: flex;
     justify-content: space-between;

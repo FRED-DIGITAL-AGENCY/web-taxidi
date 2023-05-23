@@ -1,3 +1,4 @@
+import Logo from './Logo'
 import './styles.css'
 import React from 'react'
 
@@ -5,11 +6,7 @@ export default function Header() {
   return (
     <div className="headerbar">
 
-      <div className="headerLogo">
-        <div className="headerLogoImage">Logo</div>
-        <div className="headerLogoLine"></div>
-        <div className="headerLogoText">FREDMIND TAXIDI LIMITED</div>
-      </div>
+      <Logo/>
       <div className="headerlistMenue">
         <div className="headerMenue">Home</div>
         <div className="headerMenue">About Us</div>

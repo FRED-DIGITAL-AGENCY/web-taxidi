@@ -6,8 +6,9 @@ import './styles.css'
 import Image from "next/image";
 import { JumpingGirl } from "../assets/images/indexExport";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheckCircle, faHourglass } from "@fortawesome/free-solid-svg-icons";
+import { faBorderAll, faCheckCircle, faHourglass, faStarOfDavid } from "@fortawesome/free-solid-svg-icons";
 import { faStar } from "@fortawesome/free-regular-svg-icons";
+import Logo from "../components/Logo";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Body2 />
       <div className="Body3BG">
         <Body3 />
+
 
       </div>
     </main>
@@ -54,14 +56,14 @@ const Body2 = () => {
         step-by-step guide & support for achieving your
         overseas dream, even if it is your first time.
       "/>
-    
-        {/* <IconCircleContainer IconName={"fa-solid fa-grid-2"} title="Lots Of Choices" caption="Migrate & Start your Dream career in UK,
-          Canada, USA, Australia & Ireland." /> */}
+
+        <IconCircleContainer IconName={faBorderAll} title="Lots Of Choices" caption="Migrate & Start your Dream career in UK,
+          Canada, USA, Australia & Ireland." />
       </div>
       <div style={{ display: 'flex', justifyContent: 'space-between', }}>
-        
-        {/* <IconCircleContainer IconName={"fa-solid fa-grid-2"} title="Travel Made Easy" caption="We have the vision to take you round 
-          the world from your comfort zone"/> */}
+
+        <IconCircleContainer IconName={faStarOfDavid} title="Travel Made Easy" caption="We have the vision to take you round 
+          the world from your comfort zone"/>
         <IconCircleContainer IconName={faStar} title="Flexibility" caption="Experience the flexibility to Travel,
           Work & Study in your Dream Country." />
       </div>
@@ -151,6 +153,8 @@ const Body3 = () => {
          "/>
       </div>
       <ServiceContainer />
+      <GetStarted />
+      <Footer />
 
     </div>
   )
@@ -160,8 +164,8 @@ const IconCircleContainer = ({ IconName = faHourglass, title = '', caption = '' 
     <div className="iconCircleContainer" >
       <div className="CircleContainer ">
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%' }}>
-        
-          <FontAwesomeIcon  icon={IconName} color="#699BF7" size={'3x'} />
+
+          <FontAwesomeIcon icon={IconName} color="#699BF7" size={'3x'} />
         </div>
       </div>
       <div className="CircleText1 "> {title} </div>
@@ -198,11 +202,27 @@ const ServiceContainer = () => {
       </div>
 
       <div className="Services">
+        <div className="ServicesHeader">Services</div>
+        <ServicesList text="Admission Application & Processing" />
+        <ServicesList text="Visa Application & Processing" />
+        <ServicesList text="Corporate, Business & Group Tours" />
+        <ServicesList text="Flight Booking & Reservation" />
+        <ServicesList text="Accommodation Booking" />
+        <ServicesList text="Statement of Purpose" />
+        <ServicesList text="Scholarships" />
 
       </div>
 
       <div className="StudyAbroad">
-
+        <div className="ServicesHeader">Study Abroad</div>
+        <ServicesList text="We help You Shape Your Future" />
+        <ServicesList text="Our Services" />
+        <ServicesList text="Study Abroad Consultation" />
+        <ServicesList text="Country, Course & University selection" />
+        <ServicesList text="GApplication & Admission" />
+        <ServicesList text="Visa Processing" />
+        <ServicesList text="Pre-Departure Briefing" />
+        <ServicesList text="Travel Assistance" />
       </div>
 
       <div>
@@ -216,8 +236,93 @@ const ServicesList = ({ text = '' }) => {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'row', marginTop: '15px' }}>
-      {/* <AiFillCheckCircle size={20} color="#699BF7" /> */}
-      <div className="AboutRightListText">{text}</div>
+      <div className="ServicesListBox"></div>
+      <div className="ServicesListText">{text}</div>
+    </div>
+  )
+}
+
+const GetStarted = () => {
+  return (
+    <>
+      <div className="StayConnected">
+        Stay Connected
+      </div>
+      <div className="GetStartedContainer">
+        <div className="GetStartedContainerText">Get Started With <span>FREDMIND!</span> </div>
+        <div className="GetStartedContainerButton"> <span>Get Started</span> </div>
+
+      </div>
+    </>
+
+
+  )
+}
+
+const Footer = () => {
+  return (
+    <div className="FooterContainer">
+      <div className="lineDivider"></div>
+      <Logo style={{ marginBottom: '20px' }} dartMode={false} />
+      <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginBottom:'50px'}}>
+        <div className="FooterRight">FREDMIND TAXIDI LTD is a reputable study abroad
+          company that provides top-quality services to
+          students who wish to pursue their education in foreign
+          countries. The company is based in Nigeria and has
+          been in operation for several years, making it one of
+          the most experienced and reliable study abroad
+          agencies in the country.
+        </div>
+        <div  style={{ display: 'flex', flexDirection: 'row', justifyContent:'space-between' }} className="FooterLeft">
+          <div style={{ display: 'flex', flexDirection: 'column', }}>
+            <div className="FooterLeftHeader">Sitemap</div>
+            <div className="FooterLeftText">Services</div>
+            <div className="FooterLeftText">About Us</div>
+            <div className="FooterLeftText">Booking</div>
+            <div className="FooterLeftText">Cancellation</div>
+          </div>
+
+          <div style={{ display: 'flex', flexDirection: 'column', }}>
+            <div className="FooterLeftHeader">Services</div>
+            <div className="FooterLeftText">Statement of Purpose</div>
+            <div className="FooterLeftText">Student Advisory</div>
+            <div className="FooterLeftText">Scholarship</div>
+            
+          </div>
+
+          <div style={{ display: 'flex', flexDirection: 'column', }}>
+            <div className="FooterLeftHeader">Core Value</div>
+            <div className="FooterLeftText">Openness</div>
+            <div className="FooterLeftText">Transparency</div>
+            <div className="FooterLeftText">Trust</div>
+            <div className="FooterLeftText">Excellence</div>
+            <div className="FooterLeftText">Collaboration</div>
+          </div>
+        </div>
+
+        
+      </div>
+
+      <div className="lineDivider"></div>
+
+      <div className="allRight">
+        <div className="allRightLeft">
+        2023 All Rights Reserved
+        </div>
+        <div className="allRightRight">
+         
+            <div className="termsAndCondition">
+            Terms & Conditions
+            </div>
+            <div className="termsAndCondition">
+            Privacy
+            </div>
+            <div className="termsAndCondition">
+            Policy
+            </div>
+          
+        </div>
+      </div>
     </div>
   )
 }

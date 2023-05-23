@@ -17,6 +17,7 @@
 }
 
 body {
+  font-family: 'PlusJakartaSansSemiBold';
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -36,3 +37,5 @@ body {
   background-image: url('../app/assets/images/bg-fredLogo.png');
   flex-direction: column;
 }
+
+
