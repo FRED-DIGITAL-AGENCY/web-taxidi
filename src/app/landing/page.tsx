@@ -216,7 +216,7 @@ const ServicesList = ({ text = '' }) => {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'row', marginTop: '15px' }}>
-      <AiFillCheckCircle size={20} color="#699BF7" />
+      {/* <AiFillCheckCircle size={20} color="#699BF7" /> */}
       <div className="AboutRightListText">{text}</div>
     </div>
   )
