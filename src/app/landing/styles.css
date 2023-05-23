@@ -11,7 +11,7 @@
 
     font-family: 'PlusJakartaSansSemiBold';
 
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.03em;
 
@@ -43,7 +43,7 @@
 .Body1Text3 {
     font-family: 'PlusJakartaSansSemiBold';
     margin-top: 40px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.03em;
     width: 526px;
@@ -86,7 +86,7 @@
 .Body2Text3 {
     font-family: 'PlusJakartaSansSemiBold';
 
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.03em;
     width: 660px;
@@ -125,7 +125,7 @@
     width: 400px;
     font-family: 'PlusJakartaSansSemiBold';
 
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.03em;
     text-align: center;
@@ -218,7 +218,7 @@
 
 .MoreAboutText {
     font-family: 'PlusJakartaSansSemiBold';
-    font-size: 16px;
+    font-size: 14px;
     width: 550px;
     color: #000000;
 }
@@ -327,7 +327,7 @@
 }
 
 .GetStartedContainerButton span {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.03em;
     font-family: 'PlusJakartaSansSemiBold';
