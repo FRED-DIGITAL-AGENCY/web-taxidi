@@ -55,13 +55,13 @@ const Body2 = () => {
         overseas dream, even if it is your first time.
       "/>
     
-        <IconCircleContainer IconName={"fa-solid fa-grid-2"} title="Lots Of Choices" caption="Migrate & Start your Dream career in UK,
-          Canada, USA, Australia & Ireland." />
+        {/* <IconCircleContainer IconName={"fa-solid fa-grid-2"} title="Lots Of Choices" caption="Migrate & Start your Dream career in UK,
+          Canada, USA, Australia & Ireland." /> */}
       </div>
       <div style={{ display: 'flex', justifyContent: 'space-between', }}>
         
-        <IconCircleContainer IconName={"fa-solid fa-grid-2"} title="Travel Made Easy" caption="We have the vision to take you round 
-          the world from your comfort zone"/>
+        {/* <IconCircleContainer IconName={"fa-solid fa-grid-2"} title="Travel Made Easy" caption="We have the vision to take you round 
+          the world from your comfort zone"/> */}
         <IconCircleContainer IconName={faStar} title="Flexibility" caption="Experience the flexibility to Travel,
           Work & Study in your Dream Country." />
       </div>
