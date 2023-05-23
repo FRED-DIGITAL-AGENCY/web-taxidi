@@ -1,11 +1,14 @@
 'use client'
 import Header from "../components/Header"
-import { ImHourGlass } from 'react-icons/Im';
-import { BsGridFill, BsStar, BsStars } from 'react-icons/Bs';
-import { AiFillCheckCircle } from 'react-icons/Ai';
+
+
 import './styles.css'
 import Image from "next/image";
 import { JumpingGirl } from "../assets/images/indexExport";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheckCircle, faHourglass } from "@fortawesome/free-solid-svg-icons";
+import { faStar } from "@fortawesome/free-regular-svg-icons";
+
 export default function Home() {
   return (
     <main className="flex min-h-screen  flex-col">
@@ -47,17 +50,19 @@ const Body2 = () => {
         flexibility to traveling, work & Study overseas accessing global Opportunities
       </div>
       <div style={{ display: 'flex', justifyContent: 'space-between', }}>
-        <IconCircleContainer IconName={ImHourGlass} title="Best Tour Guide" caption="We help you plan your trip, hold-you-by-hand”,
+        <IconCircleContainer IconName={faHourglass} title="Best Tour Guide" caption="We help you plan your trip, hold-you-by-hand”,
         step-by-step guide & support for achieving your
         overseas dream, even if it is your first time.
       "/>
-        <IconCircleContainer IconName={BsGridFill} title="Lots Of Choices" caption="Migrate & Start your Dream career in UK,
+    
+        <IconCircleContainer IconName={"fa-solid fa-grid-2"} title="Lots Of Choices" caption="Migrate & Start your Dream career in UK,
           Canada, USA, Australia & Ireland." />
       </div>
       <div style={{ display: 'flex', justifyContent: 'space-between', }}>
-        <IconCircleContainer IconName={BsStars} title="Travel Made Easy" caption="We have the vision to take you round 
+        
+        <IconCircleContainer IconName={"fa-solid fa-grid-2"} title="Travel Made Easy" caption="We have the vision to take you round 
           the world from your comfort zone"/>
-        <IconCircleContainer IconName={BsStar} title="Flexibility" caption="Experience the flexibility to Travel,
+        <IconCircleContainer IconName={faStar} title="Flexibility" caption="Experience the flexibility to Travel,
           Work & Study in your Dream Country." />
       </div>
     </div>
@@ -150,12 +155,13 @@ const Body3 = () => {
     </div>
   )
 }
-const IconCircleContainer = ({ IconName = ImHourGlass, title = '', caption = '' }) => {
+const IconCircleContainer = ({ IconName = faHourglass, title = '', caption = '' }) => {
   return (
     <div className="iconCircleContainer" >
       <div className="CircleContainer ">
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%' }}>
-          <IconName color="#699BF7" size={53} />
+        
+          <FontAwesomeIcon  icon={IconName} color="#699BF7" size={'3x'} />
         </div>
       </div>
       <div className="CircleText1 "> {title} </div>
@@ -167,7 +173,7 @@ const AboutRightList = ({ text = '' }) => {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'row', marginTop: '15px' }}>
-      <AiFillCheckCircle size={20} color="#699BF7" />
+      <FontAwesomeIcon icon={faCheckCircle} size={'lg'} color="#699BF7" />
       <div className="AboutRightListText">{text}</div>
     </div>
   )
