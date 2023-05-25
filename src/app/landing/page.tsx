@@ -210,17 +210,20 @@ const ServiceContainer = () => {
 
       <div  data-aos={'fade-down'} data-aos-type="write-in-left" data-aos-delay={'800'} data-aos-duration="1000"  className="Services">
         <div className="ServicesHeader">Services</div>
-        <ServicesList text="Admission Application & Processing" />
         <ServicesList text="Visa Application & Processing" />
+        <ServicesList text="Study Abroad" />
+        <ServicesList text="Work" />
+        <ServicesList text="Migrate to Canada" />
+        <ServicesList text="English Proficiency Test (IELTS, GRE, GMAT & TOEFL & SAT)" />
+        <ServicesList text="Flight Ticketing" />
+        <ServicesList text="Health Care Assistance" />
         <ServicesList text="Corporate, Business & Group Tours" />
-        <ServicesList text="Flight Booking & Reservation" />
-        <ServicesList text="Accommodation Booking" />
-        <ServicesList text="Statement of Purpose" />
-        <ServicesList text="Scholarships" />
+        <ServicesList text="Flight & Hotel Reservation" />
+        <ServicesList text="Accomodation Booking" />
 
       </div>
 
-      <div  data-aos={'fade-up'} data-aos-type="write-in-left" data-aos-delay={'700'} data-aos-duration="1000"  className="StudyAbroad">
+      {/* <div  data-aos={'fade-up'} data-aos-type="write-in-left" data-aos-delay={'700'} data-aos-duration="1000"  className="StudyAbroad">
         <div className="ServicesHeader">Study Abroad</div>
         <ServicesList text="We help You Shape Your Future" />
         <ServicesList text="Our Services" />
@@ -230,7 +233,7 @@ const ServiceContainer = () => {
         <ServicesList text="Visa Processing" />
         <ServicesList text="Pre-Departure Briefing" />
         <ServicesList text="Travel Assistance" />
-      </div>
+      </div> */}
 
       <div>
 
@@ -268,7 +271,7 @@ const GetStarted = () => {
 
 const Footer = () => {
   return (
-    <div data-aos={'fade'} data-aos-type="write-in-left" data-aos-delay={'1000'} data-aos-duration="1000" className="FooterContainer">
+    <div data-aos={'fade'} data-aos-type="write-in-left" data-aos-delay={'1000'} data-aos-duration="3000" className="FooterContainer">
       <div className="lineDivider"></div>
       <Logo style={{ marginBottom: '20px' }} dartMode={false} />
       <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginBottom: '50px' }}>
