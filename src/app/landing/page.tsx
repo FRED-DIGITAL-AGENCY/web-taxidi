@@ -9,8 +9,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBorderAll, faCheckCircle, faHourglass, faStarOfDavid } from "@fortawesome/free-solid-svg-icons";
 import { faStar } from "@fortawesome/free-regular-svg-icons";
 import Logo from "../components/Logo";
+import { useEffect } from "react";
+import AOS from 'aos';
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
+  
+
   return (
     <main className="flex min-h-screen  flex-col">
       <LandingPage />
@@ -26,7 +33,7 @@ export default function Home() {
 const LandingPage = () => {
   return (
     <div className=" flex headerLanding bg-cover bg-center h-screen w-full px-16" >
-      <Header />
+      <Header  />
       <Body1 />
     </div>
   )
