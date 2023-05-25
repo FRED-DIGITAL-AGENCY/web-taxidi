@@ -13,12 +13,12 @@ export default function Header() {
 
 
   return (
-    <div  data-aos="zoom-in-down" className="headerbar">
+    <div  data-aos="zoom-in-down" data-aos-duration="2000" data-aos-delay="1000" className="headerbar">
 
       <Logo/>
       <div className="headerlistMenue">
         <div className="headerMenue">Home</div>
-        <div  data-aos="zoom-in-down" className="headerMenue">About Us</div>
+        <div className="headerMenue">About Us</div>
         <div className="headerMenue">Services</div>
         <div className="headerMenue">Our Impact</div>
         <div className="headerMenue">Our Partners</div>

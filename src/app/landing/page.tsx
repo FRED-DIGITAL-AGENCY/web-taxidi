@@ -14,7 +14,9 @@ import AOS from 'aos';
 
 export default function Home() {
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      easing: 'ease-in-out-back'
+    });
   }, [])
   
 
@@ -24,15 +26,13 @@ export default function Home() {
       <Body2 />
       <div className="Body3BG">
         <Body3 />
-
-
       </div>
     </main>
   )
 }
 const LandingPage = () => {
   return (
-    <div className=" flex headerLanding bg-cover bg-center h-screen w-full px-16" >
+    <div  data-aos="zoom-in" data-aos-duration="1000" className=" flex headerLanding bg-cover bg-center h-screen w-full px-16" >
       <Header  />
       <Body1 />
     </div>
@@ -41,9 +41,9 @@ const LandingPage = () => {
 const Body1 = () => {
   return (
     <div className="Body1 " >
-      <div className="Body1Text1 ">Travel Seamlessly</div>
-      <div className="Body1Text2 ">Exploring The World, Accessing Global <span>Opportunities</span> </div>
-      <div className="Body1Text3 ">We Are On A Mission To Make Traveling Around The World Easy by
+      <div data-aos="fade-up" data-aos-type="write-in-left" data-aos-delay="3000" data-aos-duration="1000" className="Body1Text1 ">Travel Seamlessly</div>
+      <div data-aos="fade"  data-aos-delay="3000" data-aos-duration="1000" className="Body1Text2 ">Exploring The World, Accessing Global <span data-aos="fade-right" data-aos-trigger="hover">Opportunities</span> </div>
+      <div data-aos="fade-down"   data-aos-delay="3000" data-aos-duration="1000" data-aos-reverse="true" className="Body1Text3 ">We Are On A Mission To Make Traveling Around The World Easy by
         creating flexibility to traveling, work & Study overseas
         accessing global Opportunities.
       </div>
@@ -53,25 +53,25 @@ const Body1 = () => {
 const Body2 = () => {
   return (
     <div className="Body2 " >
-      <div className="Body2Text1 ">Meet Quality, Get Value</div>
-      <div className="Body2Text2 ">Travel Riders - We Ride You To Your Destinations </div>
-      <div className="Body2Text3 ">We Are On A Mission To Make Traveling Around The World Easy by creating
+      <div data-aos="fade-up" data-aos-type="write-in-left"  data-aos-duration="1000" className="Body2Text1 ">Meet Quality, Get Value</div>
+      <div data-aos="flip-up" data-aos-type="write-in-left" data-aos-delay="50" data-aos-duration="1000" className="Body2Text2 ">Travel Riders - We Ride You To Your Destinations </div>
+      <div data-aos="fade-down" data-aos-type="write-in-left" data-aos-delay="100" data-aos-duration="1000"className="Body2Text3 ">We Are On A Mission To Make Traveling Around The World Easy by creating
         flexibility to traveling, work & Study overseas accessing global Opportunities
       </div>
       <div style={{ display: 'flex', justifyContent: 'space-between', }}>
-        <IconCircleContainer IconName={faHourglass} title="Best Tour Guide" caption="We help you plan your trip, hold-you-by-hand”,
+        <IconCircleContainer dataAos={'fade-down-right'} IconName={faHourglass} title="Best Tour Guide" caption="We help you plan your trip, hold-you-by-hand”,
         step-by-step guide & support for achieving your
         overseas dream, even if it is your first time.
       "/>
 
-        <IconCircleContainer IconName={faBorderAll} title="Lots Of Choices" caption="Migrate & Start your Dream career in UK,
+        <IconCircleContainer dataAos={'fade-down-left'}  IconName={faBorderAll} title="Lots Of Choices" caption="Migrate & Start your Dream career in UK,
           Canada, USA, Australia & Ireland." />
       </div>
       <div style={{ display: 'flex', justifyContent: 'space-between', }}>
 
-        <IconCircleContainer IconName={faStarOfDavid} title="Travel Made Easy" caption="We have the vision to take you round 
+        <IconCircleContainer dataAos={'fade-up-right'} IconName={faStarOfDavid} title="Travel Made Easy" caption="We have the vision to take you round 
           the world from your comfort zone"/>
-        <IconCircleContainer IconName={faStar} title="Flexibility" caption="Experience the flexibility to Travel,
+        <IconCircleContainer dataAos={'fade-up-left'} IconName={faStar} title="Flexibility" caption="Experience the flexibility to Travel,
           Work & Study in your Dream Country." />
       </div>
     </div>
@@ -166,11 +166,11 @@ const Body3 = () => {
     </div>
   )
 }
-const IconCircleContainer = ({ IconName = faHourglass, title = '', caption = '' }) => {
+const IconCircleContainer = ({dataAos="fade-down", IconName = faHourglass, title = '', caption = '' }) => {
   return (
-    <div className="iconCircleContainer" >
+    <div data-aos={dataAos} data-aos-type="write-in-left" data-aos-delay="400" data-aos-duration="2000" className="iconCircleContainer" >
       <div className="CircleContainer ">
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%' }}>
+        <div data-aos={'fade'} data-aos-type="write-in-left" data-aos-delay="600" data-aos-duration="3000" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%' }}>
 
           <FontAwesomeIcon icon={IconName} color="#699BF7" size={'3x'} />
         </div>
