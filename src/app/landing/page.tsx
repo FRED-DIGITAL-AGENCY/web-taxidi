@@ -21,7 +21,7 @@ export default function Home() {
 
 
   return (
-    <main className="flex min-h-screen  flex-col">
+    <main className="flex min-h-screen  min-w-screen  flex-col">
       <LandingPage />
       <Body2 />
       <div className="Body3BG">

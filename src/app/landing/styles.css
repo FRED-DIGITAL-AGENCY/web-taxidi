@@ -1,9 +1,13 @@
+.min-w-screen{
+    /* min-width: 100vw; */
+}
 .headerLanding {
     background-image: url('../../app/assets/images/bg-fredLogo.png');
     flex-direction: column;
-    padding-left: 4rem/* 64px */;
-      padding-right: 4rem/* 64px */;
     
+    background-repeat: no-repeat;
+    padding-left: 4rem/* 64px */;
+    padding-right: 4rem/* 64px */;
       overflow-x: hidden;
   }
 .Body1 {
