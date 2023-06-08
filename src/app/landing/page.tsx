@@ -32,7 +32,7 @@ export default function Home() {
 }
 const LandingPage = () => {
   return (
-    <div data-aos="zoom-in" data-aos-duration="1000" className=" flex headerLanding bg-cover bg-center h-screen w-full px-16" >
+    <div data-aos="zoom-in" data-aos-duration="1000" className=" flex headerLanding bg-cover bg-center h-screen w-full " >
       <Header />
       <Body1 />
     </div>
@@ -58,7 +58,7 @@ const Body2 = () => {
       <div data-aos="fade-down" data-aos-type="write-in-left" data-aos-delay="100" data-aos-duration="1000" className="Body2Text3 ">We Are On A Mission To Make Traveling Around The World Easy by creating
         flexibility to traveling, work & Study overseas accessing global Opportunities
       </div>
-      <div style={{ display: 'flex', justifyContent: 'space-between', }}>
+      <div  className="IconCircleContainer " style={{ display: 'flex', justifyContent: 'space-between', }}>
         <IconCircleContainer dataAos={'fade-down-right'} IconName={faHourglass} title="Best Tour Guide" caption="We help you plan your trip, hold-you-by-hand”,
         step-by-step guide & support for achieving your
         overseas dream, even if it is your first time.
@@ -67,7 +67,7 @@ const Body2 = () => {
         <IconCircleContainer dataAos={'fade-down-left'} IconName={faBorderAll} title="Lots Of Choices" caption="Migrate & Start your Dream career in UK,
           Canada, USA, Australia & Ireland." />
       </div>
-      <div style={{ display: 'flex', justifyContent: 'space-between', }}>
+      <div  className="IconCircleContainer " style={{ display: 'flex', justifyContent: 'space-between', }}>
 
         <IconCircleContainer dataAos={'fade-up-right'} IconName={faStarOfDavid} title="Travel Made Easy" caption="We have the vision to take you round 
           the world from your comfort zone"/>
@@ -79,7 +79,7 @@ const Body2 = () => {
 }
 const Body3 = () => {
   return (
-    <div className="Body3 px-16" >
+    <div className="Body3 " >
       <div className="AboutContainer ">
         <div className="AboutLeft">
           <div data-aos="flip-right" data-aos-type="write-in-left" data-aos-delay="400" data-aos-duration="1000" className="AboutTitle">
@@ -193,7 +193,7 @@ const AboutRightList = ({ text = '', aosDelay = '' }) => {
 const MoreAbout = ({ text = '', header = '', marginLeft = '0px', marginRight = '0px',dataAos='' }) => {
 
   return (
-    <div data-aos={dataAos} data-aos-type="write-in-left" data-aos-delay={'600'} data-aos-duration="1000" style={{ display: 'flex', flexDirection: 'column', marginTop: '74px', marginLeft, marginRight }}>
+    <div className="MoreAbout" data-aos={dataAos} data-aos-type="write-in-left" data-aos-delay={'600'} data-aos-duration="1000" style={{ display: 'flex', flexDirection: 'column', marginTop: '74px',  }}>
       <div className="MoreAboutHeader">{header}</div>
       <div className="MoreAboutText">{text}</div>
     </div>
@@ -274,7 +274,7 @@ const Footer = () => {
     <div data-aos={'fade'} data-aos-type="write-in-left" data-aos-delay={'1000'} data-aos-duration="3000" className="FooterContainer">
       <div className="lineDivider"></div>
       <Logo style={{ marginBottom: '20px' }} dartMode={false} />
-      <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginBottom: '50px' }}>
+      <div className="Footers">
         <div className="FooterRight">FREDMIND TAXIDI LTD is a reputable study abroad
           company that provides top-quality services to
           students who wish to pursue their education in foreign

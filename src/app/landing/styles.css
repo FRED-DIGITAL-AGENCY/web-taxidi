@@ -1,7 +1,15 @@
+.headerLanding {
+    background-image: url('../../app/assets/images/bg-fredLogo.png');
+    flex-direction: column;
+    padding-left: 4rem/* 64px */;
+      padding-right: 4rem/* 64px */;
+      height: ;
+  }
 .Body1 {
     display: flex;
     flex-direction: column;
     flex: 1;
+    height: 100%;
     justify-content: center;
 }
 
@@ -30,14 +38,11 @@
 }
 
 .Body1Text2 span {
-
     font-family: 'PlusJakartaSansSemiBold';
-
     font-size: 40px;
     line-height: 50px;
     letter-spacing: 0.03em;
     color: #80BDD2;
-
 }
 
 .Body1Text3 {
@@ -93,6 +98,11 @@
     color: #7A7878;
 }
 
+.IconCircleContainer{
+    display: flex;
+     justify-content: space-between;
+     
+}
 .iconCircleContainer {
     display: flex;
     flex-direction: column;
@@ -144,6 +154,8 @@
     display: flex;
     flex-direction: column;
     filter: none;
+    padding-left: 4rem/* 64px */;
+    padding-right: 4rem/* 64px */;
 }
 
 .AboutContainer {
@@ -266,6 +278,7 @@
 }
 
 .ServicesListBox {
+    min-width: 14px;
     width: 14px;
     height: 12px;
     margin-right: 10px;
@@ -347,6 +360,15 @@
     background: #7A7878;
     margin-bottom: 20px;
 }
+.Footers{
+    display:flex;
+    
+    justify-self: start;
+
+    flex-direction: row; 
+    justify-content: space-between;
+     margin-bottom: 50px;
+}
 
 .FooterRight {
     font-family: 'PlusJakartaSansSemiBold';
@@ -361,9 +383,9 @@
 .FooterLeft {
     margin-left: 140px;
     width: 100%;
-    /* display: 'flex' !important; 
+    display: 'flex' !important; 
     flex-direction: 'row' !important;
-    justify-content: 'space-between' !important; */
+    justify-content: 'space-between' !important;
 }
 
 .FooterLeftHeader {
@@ -415,3 +437,176 @@
     font-size: 14px;
     /* margin-right: 20px; */
 }
+
+@media (max-width: 767px) {
+    .headerLanding {
+        
+        padding-left: 10px;
+          padding-right: 10px;
+      }
+      .Body3 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .Body1Text1{
+        /* font-size: 11px; */
+    }
+    .Body1Text2{
+        width: 100%;
+        height: auto;
+    }
+    .Body1Text3{
+        width: 100%;
+        height: auto;
+    }
+    .headerLanding{
+        height: 100vh;
+    }
+
+    .Body2Text1 {
+        width: auto;
+    }
+    
+    .Body2Text2 {
+        width: auto;
+    }
+    
+    .Body2Text3 {
+        
+        width: auto;
+        margin-bottom: 32px;
+        
+    }
+    .IconCircleContainer{
+        display: flex;
+         
+         flex-direction: column;
+    }
+    .CircleText1 {
+        width: auto;
+    }
+    
+    .CircleText2 {
+        width: auto;
+    }
+    .AboutContainer {
+        flex-direction: column;
+    }
+    .AboutTitle {
+        width: auto;
+        font-size: 60px;
+    
+    }
+    
+    .AboutText {
+        width: auto;
+        margin-bottom: 20px;
+    }
+    .AboutButton{
+        margin-bottom: 50px;
+    }
+
+    .MoreAboutHeader {
+        display: flex;
+     width: 100%;
+     justify-content: flex-start;
+     align-items: flex-start;
+     font-size: 20px;
+     margin-left: 0px;
+        margin-left: 0px;
+    }
+    .MoreAbout{
+        display: flex;
+        margin-left: 0px;
+        margin-left: 0px;
+    }
+    
+    .MoreAboutText {
+        display: flex;
+        width: 100%;
+        margin-left: 0px;
+        margin-left: 0px;
+    }
+    .ServiceContainer {
+        
+        flex-direction: column;
+       
+    }
+    .ServiceImage {
+        width: 100%;
+        height: auto;
+    }
+    
+    .Services {
+        width: 100%;
+        margin-left: 0px;
+        margin-left: 0px;
+    }
+    
+    .StudyAbroad {
+    
+        width: 100%;
+    }
+    .ServicesListText {
+        font-size: 18px;
+       
+    }
+    .GetStartedContainer {
+        
+        flex-direction: column;
+        justify-content: flex-start;
+       
+    }
+    
+    .GetStartedContainerText {
+        width: auto;
+    }
+    .GetStartedContainerButton {
+       margin-bottom: 10px;
+    }
+    .Footers{
+        display:flex;
+        flex-direction: column;
+        justify-self: start;
+
+    }
+    .FooterRight{
+        width: auto;
+        margin-bottom: 0px;
+        margin-top: 10px;
+
+    }
+    .FooterLeft{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+        margin-bottom: 0px;
+    }
+    .FooterLeftHeader {
+        margin-top: 30px;
+    }
+    .FooterLeftText {
+       
+        font-size: 16px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+  
+    .allRight{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -15px;
+    }
+    .allRightLeft{
+        margin-left: 0px;
+        font-size: 12px;
+    }
+    .termsAndCondition{
+        margin-left: 0px;
+        font-size: 12px;
+    }
+}
+

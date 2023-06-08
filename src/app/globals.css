@@ -19,6 +19,7 @@
 body {
   font-family: 'PlusJakartaSansSemiBold';
   color: rgb(var(--foreground-rgb));
+  
   background: linear-gradient(
       to bottom,
       transparent,
@@ -33,9 +34,10 @@ body {
     /* add other font formats here as needed */
   }
 
-.headerLanding {
-  background-image: url('../app/assets/images/bg-fredLogo.png');
-  flex-direction: column;
-}
 
+
+
+@media (max-width: 767px) {
+
+}
 
