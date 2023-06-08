@@ -4,6 +4,7 @@
     padding-left: 4rem/* 64px */;
       padding-right: 4rem/* 64px */;
       height: ;
+      overflow-x: hidden;
   }
 .Body1 {
     display: flex;
@@ -156,6 +157,7 @@
     filter: none;
     padding-left: 4rem/* 64px */;
     padding-right: 4rem/* 64px */;
+    overflow-x: hidden;
 }
 
 .AboutContainer {
@@ -605,7 +607,8 @@
         font-size: 12px;
     }
     .termsAndCondition{
-        margin-left: 0px;
+        margin-left: 2px;
+        margin-right: 2px;
         font-size: 12px;
     }
 }

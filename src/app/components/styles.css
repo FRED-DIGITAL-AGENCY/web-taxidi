@@ -169,4 +169,13 @@ span {
     .BookAConsultationBox {
         order: 2;
     }
+    .headerlistMenueMobile{
+        display: none;
+        opacity: 0;
+    }
+    .BookAConsultationBoxMobile{
+        display: none;
+        opacity: 0;
+    
+    }
 }
