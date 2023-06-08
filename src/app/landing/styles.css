@@ -1,3 +1,6 @@
+.min-w-screen{
+    /* min-width: 100vw; */
+}
 .headerLanding {
     background-image: url('../../app/assets/images/bg-fredLogo.png');
     flex-direction: column;
