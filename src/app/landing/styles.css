@@ -3,7 +3,7 @@
     flex-direction: column;
     padding-left: 4rem/* 64px */;
       padding-right: 4rem/* 64px */;
-      height: ;
+    
       overflow-x: hidden;
   }
 .Body1 {
@@ -442,12 +442,13 @@
 
 @media (max-width: 767px) {
     .headerLanding {
-        
+        width: 100vw; 
         padding-left: 10px;
           padding-right: 10px;
       }
       .Body3 {
         padding-left: 10px;
+        width: 100vw; 
         padding-right: 10px;
     }
     .Body1Text1{

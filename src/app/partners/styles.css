@@ -1,0 +1,21 @@
+.termsAndCondition{
+    
+    margin-left: 25px;
+    font-family: 'PlusJakartaSansSemiBold';
+    font-size: 14px;
+    /* margin-right: 20px; */
+}
+
+.partnersBody{
+    padding-left: 4rem/* 64px */;
+      padding-right: 4rem/* 64px */;
+      overflow-x: hidden;
+}
+
+
+
+
+
+@media (max-width: 767px) {
+
+}
