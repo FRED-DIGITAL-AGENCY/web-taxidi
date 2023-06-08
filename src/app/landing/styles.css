@@ -3,8 +3,7 @@
     flex-direction: column;
     padding-left: 4rem/* 64px */;
       padding-right: 4rem/* 64px */;
-    
-      overflow-x: hidden;
+     
   }
 .Body1 {
     display: flex;
@@ -442,14 +441,17 @@
 
 @media (max-width: 767px) {
     .headerLanding {
-        width: 100vw; 
+        /* width: 100vw;  */
         padding-left: 10px;
           padding-right: 10px;
+          width: 100%;
+          overflow-x: hidden;
       }
       .Body3 {
         padding-left: 10px;
-        width: 100vw; 
         padding-right: 10px;
+        width: 100%;
+        overflow-x: hidden;
     }
     .Body1Text1{
         /* font-size: 11px; */
@@ -482,15 +484,15 @@
     }
     .IconCircleContainer{
         display: flex;
-         
          flex-direction: column;
+         justify-content: space-between;
     }
     .CircleText1 {
-        width: auto;
+        width: 100%;
     }
     
     .CircleText2 {
-        width: auto;
+        width: 100%;
     }
     .AboutContainer {
         flex-direction: column;
@@ -612,5 +614,15 @@
         margin-right: 2px;
         font-size: 12px;
     }
+    .CircleContainer {
+        width: 6.2em;
+        height: 6.2em;
+        border-radius: 50%;
+        background: #466D7B;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    
+    }
+    
 }
 
