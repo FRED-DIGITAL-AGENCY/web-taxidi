@@ -80,11 +80,21 @@
 .BookAConsultationBox {
     display: flex;
     cursor: pointer;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px 35px;
+    gap: 10px;
+    background: #466D7B;
+    border-radius: 17px;
+    display: flex;
+    cursor: pointer;
+    width: auto;
     width: fit-content;
     width: -moz-fit-content;
     background: #466D7B;
     border-radius: 17px;
     
+
 }
 
 .BookAConsultationBox,
