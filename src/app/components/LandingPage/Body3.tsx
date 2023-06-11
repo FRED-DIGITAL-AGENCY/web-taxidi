@@ -107,7 +107,7 @@ export const Body3 = () => {
           <div className="ServiceContainer " >
   
             <div data-aos={'fade-up'}  data-aos-delay={'700'} data-aos-duration="1000" className="ServiceImage">
-              <Image style={{ borderRadius: '30px' }} src={JumpingGirl} alt="" />
+              <Image alt=''  style={{ borderRadius: '30px' }} src={JumpingGirl} alt="" />
             </div>
   
             <div data-aos={'fade-down'}  data-aos-delay={'800'} data-aos-duration="1000" className="Services">

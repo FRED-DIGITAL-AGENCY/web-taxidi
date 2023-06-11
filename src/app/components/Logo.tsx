@@ -8,7 +8,7 @@ export default function Logo({dartMode=true,style={}}) {
     return(
       <div style={style} className="headerLogo">
       <div className="headerLogoImage">
-        <Image  alt='fredmindBlackLogo' src={fredmindBlackLogo}/>
+        <Image alt=''   alt='fredmindBlackLogo' src={fredmindBlackLogo}/>
       </div>
       <div className="headerLogoLineDartMode"></div>
       <div className="headerLogoTextDartMode">FREDMIND TAXIDI LIMITED</div>
@@ -18,7 +18,7 @@ export default function Logo({dartMode=true,style={}}) {
      return (
     <div className="headerLogo">
         <div className="headerLogoImage">
-        <Image alt='fredmindWhiteLogo' src={fredmindWhiteLogo}/>
+        <Image alt=''  alt='fredmindWhiteLogo' src={fredmindWhiteLogo}/>
         </div>
         <div className="headerLogoLine"></div>
         <div className="headerLogoText">FREDMIND TAXIDI LIMITED</div>
