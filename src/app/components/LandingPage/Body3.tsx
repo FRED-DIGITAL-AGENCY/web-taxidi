@@ -14,16 +14,16 @@ export const Body3 = () => {
           <Element name="ScrollToAboutUs">
             {
               <div className="AboutLeft">
-                <div data-aos="flip-right" data-aos-type="write-in-left" data-aos-delay="400" data-aos-duration="1000" className="AboutTitle">
+                <div data-aos="flip-right"  data-aos-delay="400" data-aos-duration="1000" className="AboutTitle">
                   ABOUT US
                 </div>
-                <div data-aos="fade" data-aos-type="write-in-left" data-aos-delay="500" data-aos-duration="1000" className="AboutText">
+                <div data-aos="fade"  data-aos-delay="500" data-aos-duration="1000" className="AboutText">
                   Your gateway to seamless and hassle-free travel experience <br /><br />
   
-                  Welcome to Fredmind Taxidi  Limited,Your Trusted Companion dedicated to making your travel experiences smooth, enjoyable, and stress-free. With a wide range of services tailored to meet your every need, we are committed to providing top-notch assistance throughout your journey. Whether you're planning a vacation, studying abroad, migrating to Canada, or seeking health care assistance, our dedicated team of experts is here to ensure your travel dreams become a reality.
+                  Welcome to Fredmind Taxidi  Limited,Your Trusted Companion dedicated to making your travel experiences smooth, enjoyable, and stress-free. With a wide range of services tailored to meet your every need, we are committed to providing top-notch assistance throughout your journey. Whether you&apos;re planning a vacation, studying abroad, migrating to Canada, or seeking health care assistance, our dedicated team of experts is here to ensure your travel dreams become a reality.
   
                 </div>
-                <div data-aos="zoom-in" data-aos-type="write-in-left" data-aos-delay="600" data-aos-duration="1000" className="AboutButton">
+                <div data-aos="zoom-in"  data-aos-delay="600" data-aos-duration="1000" className="AboutButton">
                   <span>Read More</span>
                 </div>
               </div>
@@ -81,7 +81,7 @@ export const Body3 = () => {
   const AboutRightList = ({ text = '', aosDelay = '' }) => {
 
     return (
-      <div data-aos="zoom-in" data-aos-type="write-in-left" data-aos-delay={aosDelay} data-aos-duration="1000" style={{ display: 'flex', flexDirection: 'row', marginTop: '15px' }}>
+      <div data-aos="zoom-in"  data-aos-delay={aosDelay} data-aos-duration="1000" style={{ display: 'flex', flexDirection: 'row', marginTop: '15px' }}>
         <FontAwesomeIcon icon={faCheckCircle} size={'lg'} color="#699BF7" />
         <div className="AboutRightListText">{text}</div>
       </div>
@@ -91,7 +91,7 @@ export const Body3 = () => {
   const MoreAbout = ({ text = '', header = '', marginLeft = '0px', marginRight = '0px', dataAos = '' }) => {
   
     return (
-      <div className="MoreAbout" data-aos={dataAos} data-aos-type="write-in-left" data-aos-delay={'600'} data-aos-duration="1000" style={{ display: 'flex', flexDirection: 'column', marginTop: '74px', }}>
+      <div className="MoreAbout" data-aos={dataAos}  data-aos-delay={'600'} data-aos-duration="1000" style={{ display: 'flex', flexDirection: 'column', marginTop: '74px', }}>
         <div className="MoreAboutHeader">{header}</div>
         <div className="MoreAboutText">{text}</div>
       </div>
@@ -106,11 +106,11 @@ export const Body3 = () => {
         {
           <div className="ServiceContainer " >
   
-            <div data-aos={'fade-up'} data-aos-type="write-in-left" data-aos-delay={'700'} data-aos-duration="1000" className="ServiceImage">
+            <div data-aos={'fade-up'}  data-aos-delay={'700'} data-aos-duration="1000" className="ServiceImage">
               <Image style={{ borderRadius: '30px' }} src={JumpingGirl} alt="" />
             </div>
   
-            <div data-aos={'fade-down'} data-aos-type="write-in-left" data-aos-delay={'800'} data-aos-duration="1000" className="Services">
+            <div data-aos={'fade-down'}  data-aos-delay={'800'} data-aos-duration="1000" className="Services">
               <div className="ServicesHeader">Services</div>
               <ServicesList text="Visa Application & Processing" />
               <ServicesList text="Study Abroad" />
@@ -125,7 +125,7 @@ export const Body3 = () => {
   
             </div>
   
-            {/* <div  data-aos={'fade-up'} data-aos-type="write-in-left" data-aos-delay={'700'} data-aos-duration="1000"  className="StudyAbroad">
+            {/* <div  data-aos={'fade-up'}  data-aos-delay={'700'} data-aos-duration="1000"  className="StudyAbroad">
           <div className="ServicesHeader">Study Abroad</div>
           <ServicesList text="We help You Shape Your Future" />
           <ServicesList text="Our Services" />
@@ -161,12 +161,12 @@ export const Body3 = () => {
   const GetStarted = () => {
     return (
       <>
-        <div data-aos={'fade'} data-aos-type="write-in-left" data-aos-delay={'700'} data-aos-duration="1000" className="StayConnected">
+        <div data-aos={'fade'}  data-aos-delay={'700'} data-aos-duration="1000" className="StayConnected">
           Stay Connected
         </div>
         <div className="GetStartedContainer">
-          <div data-aos={'fade'} data-aos-type="write-in-left" data-aos-delay={'700'} data-aos-duration="1000" className="GetStartedContainerText">Get Started With <span>FREDMIND!</span> </div>
-          <div data-aos={'flip-up'} data-aos-type="write-in-left" data-aos-delay={'1000'} data-aos-duration="3000" className="GetStartedContainerButton"> <span>Get Started</span> </div>
+          <div data-aos={'fade'}  data-aos-delay={'700'} data-aos-duration="1000" className="GetStartedContainerText">Get Started With <span>FREDMIND!</span> </div>
+          <div data-aos={'flip-up'}  data-aos-delay={'1000'} data-aos-duration="3000" className="GetStartedContainerButton"> <span>Get Started</span> </div>
   
         </div>
       </>

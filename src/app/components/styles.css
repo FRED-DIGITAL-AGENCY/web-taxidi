@@ -80,12 +80,11 @@
 .BookAConsultationBox {
     display: flex;
     cursor: pointer;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 15px 35px;
-    gap: 10px;
+    width: fit-content;
+    width: -moz-fit-content;
     background: #466D7B;
     border-radius: 17px;
+    
 }
 
 .BookAConsultationBox,
@@ -105,7 +104,39 @@ span {
     display: none;
 
 }
+.partnersContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
 
+.partnersImageContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 70px;
+    width: 100%;
+
+}
+.partnersheader{
+    display: flex;
+    font-family: 'PlusJakartaSansBold';
+    font-size: 32px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    color: #85BEDA;
+    
+}
+.partnersImage{
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: row; */
+    width: calc(100% - 120px);
+}
 /* For screens smaller than 768px */
 @media (max-width: 767px) {
    .headerbar {
@@ -113,7 +144,12 @@ span {
         padding: 10px;
         flex-wrap: wrap;
     }
-
+    .partnersImage{
+        display: flex;
+        justify-content: space-between;
+        /* flex-direction: row; */
+        width: calc(100% - 70px);
+    }
     .headerlistMenue {
         display: none;
        
@@ -182,4 +218,6 @@ span {
         opacity: 0;
     
     }
+
+    
 }

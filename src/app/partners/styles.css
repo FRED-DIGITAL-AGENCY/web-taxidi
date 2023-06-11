@@ -445,6 +445,31 @@
     /* margin-right: 20px; */
 }
 
+.PartnersContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.PartnersTextContainer{
+    width: 50%;
+}
+.PartnersImageContainer{
+    width: 50%;
+}
+.PartnersTextHeader {
+    font-family: 'PlusJakartaSansSemiBold';
+    font-size: 24px;
+    
+    color: #466D7B;
+    margin-bottom: 30px;
+}
+
+.PartnersText {
+    font-family: 'PlusJakartaSansSemiBold';
+    font-size: 16px;
+    color: #000000;
+}
 @media (max-width: 767px) {
     .headerLanding {
         /* width: 100vw;  */
@@ -641,4 +666,6 @@
     }
     
 }
+
+
 

@@ -2,7 +2,7 @@ import Logo from "./Logo"
 
 export const Footer = () => {
     return (
-      <div data-aos={'fade'} data-aos-type="write-in-left" data-aos-delay={'1000'} data-aos-duration="3000" className="FooterContainer">
+      <div data-aos={'fade'}  data-aos-delay={'1000'} data-aos-duration="3000" className="FooterContainer">
         <div className="lineDivider"></div>
         <Logo style={{ marginBottom: '20px' }} dartMode={false} />
         <div className="Footers">

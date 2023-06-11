@@ -36,6 +36,11 @@ body {
     src: url('../app/assets/fonts/PlusJakartaSans/static/Montserrat-SemiBold.ttf') format('truetype');
     /* add other font formats here as needed */
   }
+  @font-face {
+    font-family: 'PlusJakartaSansBold';
+    src: url('../app/assets/fonts/PlusJakartaSans/static/Montserrat-Bold.ttf') format('truetype');
+    /* add other font formats here as needed */
+  }
 
 
 
