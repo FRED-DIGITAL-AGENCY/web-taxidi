@@ -6,7 +6,7 @@
     flex-direction: column;
     padding-left: 4rem/* 64px */;
       padding-right: 4rem/* 64px */;
-     
+     opacity: 0;
   }
 .Body1 {
     display: flex;
@@ -187,7 +187,10 @@
     letter-spacing: 0.03em;
     color: #466D7B;
 }
-
+.AboutRight{
+    margin-top:110px;
+    margin-left: 10px;
+}
 .AboutRightListText {
     font-family: 'PlusJakartaSansSemiBold';
     font-size: 18px;
@@ -463,6 +466,9 @@
         width: 100%;
         height: auto;
     }
+    .AboutRight{
+    margin-top:20px;
+}
     .Body1Text3{
         width: 100%;
         height: auto;
@@ -488,8 +494,15 @@
     .IconCircleContainer{
         display: flex;
          flex-direction: column;
-         justify-content: space-between;
+         justify-content: center;
+         align-items: center;
+         width: 100%;
     }
+    .iconCircleContainer {
+   
+    width: 100%;
+    z-index: 1000;
+}
     .CircleText1 {
         width: 100%;
     }

@@ -9,11 +9,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBorderAll, faCheckCircle, faHourglass, faStarOfDavid } from "@fortawesome/free-solid-svg-icons";
 import { faStar } from "@fortawesome/free-regular-svg-icons";
 import Logo from "../components/Logo";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import AOS from 'aos';
-import React from "react";
+import { Provider } from 'react-redux'
+import store from "../util/store/store";
+import { Element } from 'react-scroll';
+import Typewriter from "typewriter-effect";
+import { LandingPage } from "../components/LandingPage/LandingPage";
+import { Body2 } from "../components/LandingPage/Body2";
+import { Body3 } from "../components/LandingPage/Body3";
+
 
 export default function Home() {
+
   useEffect(() => {
     AOS.init({
       easing: 'ease-in-out-back'
@@ -22,9 +30,25 @@ export default function Home() {
 
 
   return (
-    <main className="flex  min-h-screen partnersBody">
-      <Header/>
-      
-    </main>
+
+    
+      <main className="flex min-h-screen  min-w-screen  flex-col">
+        <LandingPage />
+        <Body2 />
+        <div className="Body3BG">
+          <Body3 />
+        </div>
+      </main>
+   
+
   )
 }
+
+
+
+
+
+
+
+
+
