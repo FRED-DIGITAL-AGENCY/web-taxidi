@@ -28,14 +28,14 @@ export default function Partners() {
                 <div className="partnersImage">
 
                     <div style={{marginLeft:'5px',marginRight:'5px'}}>
-                        <Image   width={135} src={ApplyboardLogo} />
+                        <Image alt='' width={135} src={ApplyboardLogo} />
                     </div>
                     
                     <div style={{marginLeft:'5px',marginRight:'5px'}}>
-                        <Image   width={135} src={VisaLogo} />
+                        <Image alt=''    width={135} src={VisaLogo} />
                     </div>
                     <div style={{marginLeft:'5px',marginRight:'5px'}}> 
-                        <Image   width={135} src={KcOverseasLogo} />
+                        <Image alt=''    width={135} src={KcOverseasLogo} />
 
                     </div>
 
