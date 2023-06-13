@@ -1,3 +1,4 @@
+import Link from "next/link"
 import Logo from "./Logo"
 
 export const Footer = () => {
@@ -46,9 +47,9 @@ export const Footer = () => {
           </div>
           <div className="allRightRight">
   
-            <div className="termsAndCondition">
+            <Link  className="termsAndCondition" href={"../terms&conditions"}>
               Terms & Conditions
-            </div>
+            </Link>
             <div className="termsAndCondition">
               Privacy
             </div>
