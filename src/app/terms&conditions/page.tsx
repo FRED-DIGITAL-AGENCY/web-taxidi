@@ -50,7 +50,7 @@ export default function Home() {
         </Element>
         
         
-        <Footer />
+        <Footer delay={'0'}/>
 
       </div>
     </main>

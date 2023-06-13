@@ -147,6 +147,29 @@ span {
     /* flex-direction: row; */
     width: calc(100% - 120px);
 }
+.FooterLeftTexticons{
+    font-family: 'PlusJakartaSansSemiBold';
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    display: flex;
+    
+    flex-direction: row;
+    
+    color: #466D7B;
+}
+.FooterLeftTexticon{
+    cursor:pointer;
+    margin-left: 6px;
+    margin-right:6px;
+}
+
+.FooterLeftText span{
+    
+    color: #466D7B;
+}
 /* For screens smaller than 768px */
 @media (max-width: 767px) {
    .headerbar {

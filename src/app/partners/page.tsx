@@ -51,7 +51,7 @@ export default function Home() {
         <PartnersContainer1 />
         <PartnersContainer2 />
         <PartnersContainer3 />
-        <Footer />
+        <Footer delay={'0'}/>
 
       </div>
     </main>
