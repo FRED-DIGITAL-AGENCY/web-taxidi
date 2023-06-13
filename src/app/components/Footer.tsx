@@ -17,7 +17,7 @@ export const Footer = ({ delay = '1000' }) => {
           agencies in the country.
         </div>
         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }} className="FooterLeft">
-          <div style={{ display: 'flex', flexDirection: 'column', }}>
+          <div style={{ display: 'flex', flexDirection: 'column', width:'75%'}}>
             <div className="FooterLeftHeader">Contact Us</div>
             <div className="FooterLeftTexticons">
               <div className="FooterLeftTexticon">

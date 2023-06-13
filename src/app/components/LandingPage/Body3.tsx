@@ -112,16 +112,13 @@ export const Body3 = () => {
   
             <div data-aos={'fade-down'}  data-aos-delay={'800'} data-aos-duration="1000" className="Services">
               <div className="ServicesHeader">Services</div>
-              <ServicesList text="Visa Application & Processing" />
-              <ServicesList text="Study Abroad" />
-              <ServicesList text="Work" />
-              <ServicesList text="Migrate to Canada" />
-              <ServicesList text="English Proficiency Test (IELTS, GRE, GMAT & TOEFL & SAT)" />
-              <ServicesList text="Flight Ticketing" />
-              <ServicesList text="Health Care Assistance" />
-              <ServicesList text="Corporate, Business & Group Tours" />
-              <ServicesList text="Flight & Hotel Reservation" />
-              <ServicesList text="Accomodation Booking" />
+             
+              <ServicesList  text="Admission Application & Processing" />
+            <ServicesList  text="Visa Application & Processing" />
+            <ServicesList  text="Corporate, Business & Group Tours" />
+            <ServicesList  text="Flight Ticketing & Reservation" />
+            <ServicesList  text="Accommodation Booking" />
+            <ServicesList  text="English Proficiency Test (IELTS, GRE, GMAT & TOEFL & SAT)" />
   
             </div>
   
@@ -151,7 +148,7 @@ export const Body3 = () => {
   const ServicesList = ({ text = '' }) => {
   
     return (
-      <div style={{ display: 'flex', flexDirection: 'row', marginTop: '15px' }}>
+      <div style={{ display: 'flex', flexDirection: 'row', marginTop: '30px' ,marginBottom :'30px'}}>
         <div className="ServicesListBox"></div>
         <div className="ServicesListText">{text}</div>
       </div>
