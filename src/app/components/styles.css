@@ -107,6 +107,38 @@ span {
 
     color: #FFFFFF;
 }
+
+.BookAConsultationBody {
+    display: flex;
+    cursor: pointer;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px 35px;
+    gap: 10px;
+    background: #466D7B;
+    border-radius: 17px;
+    display: flex;
+    cursor: pointer;
+    width: auto;
+    width: fit-content;
+    width: -moz-fit-content;
+    background: #466D7B;
+    border-radius: 17px;
+    
+
+}
+
+.BookAConsultationBody,
+span {
+    font-family: 'PlusJakartaSansSemiBold';
+    
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+}
+
 .headerlistMenueMobile{
     display: none;
 }
@@ -212,7 +244,9 @@ span {
 
     .headerMenue {
         font-size: 11px;
-        margin: 0 5px;
+        
+        margin: 5px;
+        font-size: 14px;
     }
 
     .headerlistMenueMobile{

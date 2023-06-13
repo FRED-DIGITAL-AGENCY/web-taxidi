@@ -2,7 +2,7 @@
     /* min-width: 100vw; */
 }
 .headerLanding {
-    background-image: url('../../app/assets/images/bg-fredLogo.png');
+    background-image: url('../app/assets/images/bg-fredLogo.png');
     flex-direction: column;
     padding-left: 4rem/* 64px */;
       padding-right: 4rem/* 64px */;
@@ -450,7 +450,7 @@
         overflow-x: hidden;
     }
     .Body1Text1{
-        /* font-size: 11px; */
+       font-size: 16px;
     }
     .Body1Text2{
         width: 100%;
@@ -461,6 +461,7 @@
 }
     .Body1Text3{
         width: 100%;
+        font-size: 16px;
         height: auto;
         
     }
@@ -470,14 +471,16 @@
 
     .Body2Text1 {
         width: auto;
+        font-size: 22px;
     }
     
     .Body2Text2 {
         width: auto;
+
     }
     
     .Body2Text3 {
-        
+        font-size: 16px;
         width: auto;
         margin-bottom: 32px;
         
@@ -536,6 +539,7 @@
     .MoreAboutText {
         display: flex;
         width: 100%;
+        font-size: 16px;
         margin-left: 0px;
         margin-left: 0px;
     }

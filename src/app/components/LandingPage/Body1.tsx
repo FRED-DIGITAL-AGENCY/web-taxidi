@@ -26,9 +26,10 @@ export const Body1 = () => {
         accessing global Opportunities.
       </div>
 
-      <div  data-aos="fade" data-aos-delay="3000" data-aos-duration="3000"onClick={() => openInNewTab('https://calendly.com/fredmindtaxidilimited/30min?month=2023-06')} style={{ marginTop:'32px' }} className="BookAConsultationBox">
+      <div  data-aos="fade" data-aos-delay="3000" data-aos-duration="3000"onClick={() => openInNewTab('https://calendly.com/fredmindtaxidilimited/30min?month=2023-06')} style={{ marginTop:'32px' }} className="BookAConsultationBody">
         <span>Book A Consultation</span>
       </div>
+      
     </div>
   )
 }

@@ -92,7 +92,9 @@ const PartnersContainer1 = () => {
 const PartnersContainer2 = () => {
 
   return (
-    <div className="PartnersContainer">
+
+    <Provider store={store}>
+        <div style={{flexDirection:'column'}} className="PartnersContainer">
       <div className="PartnersImageContainer">
 
       </div>
@@ -132,6 +134,8 @@ const PartnersContainer2 = () => {
 
 
     </div>
+    </Provider>
+  
   )
 }
 const PartnersContainer3 = () => {
