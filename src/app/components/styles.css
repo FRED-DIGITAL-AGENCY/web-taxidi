@@ -5,6 +5,7 @@
     top: 3px;
     justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
 }
 .menuIcon {
     display: none;
